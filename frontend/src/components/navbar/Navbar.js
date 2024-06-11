@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
 import './navbar.css';
 
@@ -6,15 +7,17 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="home-icon">
-        <a href="#home"><FaHome /></a>
+        <Link to="/"><FaHome /></Link>
       </div>
       <div className="title">
-        <h1>Your Name</h1>
+        <h1>David (Huy) Pham</h1>
+        <h2>Software Engineering Graduate</h2>
       </div>
       <nav className="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/test">TestPage</Link>
       </nav>
     </header>
   );
