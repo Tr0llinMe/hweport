@@ -1,0 +1,40 @@
+.navbar {
+    background: #27293d;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .home-icon a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
