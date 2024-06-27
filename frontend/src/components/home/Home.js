@@ -10,7 +10,7 @@ function Home() {
           <div className= "about-content">
             <img src= "/images/homepic.jpg" alt="Huy (David)" className= "about-image" />
             <p>
-              Hi there! I'm Huy (sometimes known as David) and welcome to my website. I am a recent software engineering graduate that is trying to showcase my abilities and
+              Hi there! I'm Huy (also known as David) and welcome to my website. I am a recent software engineering graduate that is trying to showcase my abilities and
               display my personal hobbies/passions in my spare time. Hope we can be in touch soon.
             </p>
           </div>
