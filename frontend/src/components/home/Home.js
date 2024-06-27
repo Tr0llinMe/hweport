@@ -7,15 +7,27 @@ function Home() {
       <div className="container">
         <section id="about" className="section">
           <h2>About Me</h2>
-          <p>Brief introduction about yourself, your education, and your career goals.</p>
+          <div className= "about-content">
+            <img src= "/images/homepic.jpg" alt="Huy (David)" className= "about-image" />
+            <p>
+              Hi there! I'm Huy (sometimes known as David) and welcome to my website. I am a recent software engineering graduate that is trying to showcase my abilities and
+              display my personal hobbies/passions in my spare time. Hope we can be in touch soon.
+            </p>
+          </div>
         </section>
         <section id="projects" className="section">
           <h2>Projects</h2>
           <ProjectCard 
-            title="Project Title 1" 
+            title="Anomaly Road Detection" 
+            description="Created a training model for roads." 
+            details="Main developer of a test training model. Was later referenced for a larger project" 
+            repoLink="https://github.com/Tr0llinMe/Anomaly-Road-Detection" 
+          />
+          <ProjectCard 
+            title="Filler for Capstone" 
             description="Short description." 
-            details="Detailed project description, technologies used, and your role." 
-            repoLink="https://github.com/yourusername/project1" 
+            details="Filler for Capstone" 
+            repoLink="https://github.com/yourusername/project2" 
           />
           <ProjectCard 
             title="Project Title 2" 
@@ -29,9 +41,6 @@ function Home() {
           <p>Reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         </section>
       </div>
-      <footer>
-        <p>&copy; 2024 Your Name</p>
-      </footer>
     </div>
   );
 }
