@@ -1,7 +1,7 @@
 import React from 'react';
-import './testpage.css';
+import './tothetop.css';
 
-function TestPage() {
+function Tothetop() {
   return (
     <div className="test-page">
       <h1>To The Top!</h1>
@@ -18,4 +18,4 @@ function TestPage() {
   );
 }
 
-export default TestPage;
+export default Tothetop;

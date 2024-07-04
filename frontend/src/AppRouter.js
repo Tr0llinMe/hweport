@@ -5,7 +5,7 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import TestPage from './components/test/Testpage';
+import Tothetop from './components/test/Tothetop';
 import './App.css';
 
 function AppRouter() {
@@ -19,7 +19,7 @@ function AppRouter() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/test" element={<TestPage />} />
+            <Route path="/tothetop" element={<Tothetop />} />
           </Routes>
         </div>
         <footer className="footer">
