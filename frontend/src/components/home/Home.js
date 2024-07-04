@@ -38,7 +38,7 @@ function Home() {
         </section>
         <section id="contact" className="section">
           <h2>Contact</h2>
-          <p>Reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p>Reach out to me at <a href="huydavidpham@hotmail.com">huydavidpham@hotmail.com</a></p>
         </section>
       </div>
     </div>
