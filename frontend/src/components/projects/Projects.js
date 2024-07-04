@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Capstone: NotifyMe Application',
     description: 'A navigation application catered to students to streamline their commuting experience.',
-    details: 'Worked as a full-stack developer within the project in order to learn the general workflow and architecture for this application. The website is able to give navigations for any mode of transport users need, with traffic congestion % also included for users to deecide their directions. It also includes an hour-to-hour traffic detail to show when the best time users should leave.',
+    details: 'Worked as a full-stack developer within the project in order to learn the general workflow and architecture for this application. The website is able to give navigations for any mode of transport users need, with traffic congestion % also included for users to decide their directions. It also includes an hour-to-hour traffic detail to show when the best time users should leave.',
     imgSRC: '/images/NotifyMeSystem.png',
     repoLink: 'https://github.com/Tr0llinMe/Navigation-TMU',
     date: 'January 2024'
