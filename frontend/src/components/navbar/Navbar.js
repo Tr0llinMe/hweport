@@ -10,7 +10,7 @@ function Navbar() {
         <Link to="/"><FaHome /></Link>
       </div>
       <div className="title">
-        <h1>David (Huy) Pham</h1>
+        <h1>Huy (David) Pham</h1>
         <h2>Software Engineering Graduate</h2>
       </div>
       <nav className="nav-links">
