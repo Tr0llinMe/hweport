@@ -5,7 +5,7 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import Tothetop from './components/test/Tothetop';
+import Tothetop from './components/tothetop/Tothetop';
 import './App.css';
 
 function AppRouter() {

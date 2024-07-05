@@ -6,16 +6,29 @@
     position: relative;
   }
   
-  .home-icon {
+  .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-group{
     position: absolute;
     top: 20px;
     left: 20px;
+    display:flex;
+    gap: 10px;
   }
   
-  .home-icon a {
+  .icon {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 3em;
+    transition: color 0.3s;
+  }
+  
+  .icon hover {
+    color: #f39c12;
   }
   
   .title {

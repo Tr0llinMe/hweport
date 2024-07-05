@@ -3,7 +3,7 @@ import './tothetop.css';
 
 function Tothetop() {
   return (
-    <div className="test-page">
+    <div className="ttt-page">
       <h1>To The Top!</h1>
       <div className="video-container">
         <iframe
