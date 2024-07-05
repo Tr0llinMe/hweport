@@ -23,14 +23,14 @@
   .icon {
     color: #ffffff;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     transition: color 0.3s;
   }
   
   .icon hover {
     color: #f39c12;
   }
-  
+
   .title {
     margin-bottom: 10px;
   }
