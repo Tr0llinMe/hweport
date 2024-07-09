@@ -26,29 +26,34 @@ function About() {
         <section className="about-section">
           <div className="section-text">
             <h3>Experience</h3>
-            <p>[Summary of Experience]</p>
+            <p>For experience within the space, I first started with learning a laravel framework stack within my first internship. This stack included php, html, css and js to create a mondernized framework that most website application were not apart of at the time. This served as a valuble lesson to understand the coding environment and the importance of dockerized container images. My next workplace took me under the AWS framework, where we were building new products to streamline some of the processes for users.</p>
+            <p>This included created creating a new engine that connected the old work into new AI that would be able to do the work that was done manually, autonomosly (using dataflow mapping). Now, most projects and tech stacks are working within a flaks and reactjs framework in order to keep up with modern standards for design, and implementations of new technologies.</p>
           </div>
-          <img src="https://via.placeholder.com/300x200" alt="Experience" className="section-photo right" />
+          <img src="/images/capstone.jpg" alt="Experience" className="section-photo right" />
         </section>
         <section className="about-section">
+          <img src="/images/code.png" alt="Skills" className="section-photo left" />
           <div className="section-text">
             <h3>Skills</h3>
             <ul>
-              <li>Programming Languages: [Languages]</li>
-              <li>Frameworks: [Frameworks]</li>
-              <li>Tools and Technologies: [Tools]</li>
-              <li>Soft Skills: [Skills]</li>
+              <li>Programming Languages: C++ ∘ Python ∘ SQL ∘ Javascript ∘ PHP ∘ CSS ∘ HTML</li>
+              <li>Frameworks: Laravel ∘ Bootstrap ∘ Netbeans ∘ AWS ∘ React ∘ Flask</li>
+              <li>Tools and Technologies: Git & Github ∘ Docker ∘ Bitbucket ∘ Navicat ∘ Ubuntu ∘ MySQL ∘ Jira ∘ Pandas</li>
             </ul>
           </div>
         </section>
-        <section className="about-section">
+        <section className="about-section personal-interests">
           <div className="section-text">
             <h3>Personal Interests</h3>
-            <p>[hobbies and everything]</p>
+            <p>During my freetime, I enjoy exploring the outdoors and trying out new sports/activites. Bouldering has been a new hobby that has been integral in my health and enjoyment. Model building has always been something that I've done with conjunction to reading, as both activies allow me to enjoy more relaxed and peaceful activites.</p>
+            <p>With my peers, I've enjoyed playing TCG (Trading Card Games), like Pokemon, and even board games with others. In the "To the Top" section, there is a documented journey of my experience learning the new tcg.</p>
           </div>
-          <img src="https://via.placeholder.com/300x200" alt="Personal Interests" className="section-photo right" />
-          <img src="https://via.placeholder.com/300x200" alt="Personal Interests" className="section-photo right" />
-          <img src="https://via.placeholder.com/300x200" alt="Personal Interests" className="section-photo right" />
+          <div className="photo-grid">
+            <img src="/images/mountains.jpg" alt="Personal Interests 1" className="section-photo" />
+            <img src="/images/gundam.jpg" alt="Personal Interests 2" className="section-photo" />
+            <img src="/images/climb.png" alt="Personal Interests 3" className="section-photo" />
+            <img src="/images/study.jpg" alt="Personal Interests 4" className="section-photo" />
+          </div>
         </section>
       </div>
     
