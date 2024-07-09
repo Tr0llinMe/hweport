@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import SpotifyPlaylist from './SpotifyPlaylist';
 import './navbar.css';
 
 function Navbar() {
@@ -22,6 +23,9 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
           <Link to="/tothetop">To The Top!</Link>
         </nav>
+        <div className='spotify-playlist'>
+          <SpotifyPlaylist />
+        </div>
       </div>
     </header>
   );

@@ -44,7 +44,7 @@ body {
     border-bottom: 2px solid #f39c12;
     padding-bottom: 10px;
     margin-bottom: 20px;
-  }
+  } 
   /* This is for inside the class */
   .about-content {
     display: flex;
@@ -73,8 +73,4 @@ body {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-  }
-  
-  .social-media-section {
-    flex: 1;
   }
