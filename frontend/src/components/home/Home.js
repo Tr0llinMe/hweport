@@ -27,7 +27,7 @@ function Home() {
           <ProjectCard 
             title="Capstone: Notify Me App" 
             description="Navigation Application for Students Commuting." 
-            details="Filler for Capstone" 
+            details="The purpose is to allow university students a streamlined medium that allows them to see traffic, best time to leave, and many other data points when commuting to school, or anywhere they want to go." 
             repoLink="https://github.com/Tr0llinMe/Navigation-TMU" 
           />
           <ProjectCard 
