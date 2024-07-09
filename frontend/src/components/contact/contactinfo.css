@@ -1,0 +1,41 @@
+.contact-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .info-item .tooltip {
+    margin-left: 10px;
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+  }
+  
+  .contact-info .info-item:hover .tooltip {
+    display: block;
+  }
+  
+  /* SocialMediaFeed.css */
+  .social-media-feed {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .social-media-feed h2 {
+    margin-bottom: 20px;
+  }
