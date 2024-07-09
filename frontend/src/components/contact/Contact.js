@@ -13,7 +13,10 @@ const Contact = () => {
         <ContactInfo />
       </div>
       <div className="contact-image">
-        <img src="/images/contactform.png" alt="Contact" />
+        <img src="/images/contactform.png" alt="Contact 1" />
+      </div>
+      <div className="contact-image">
+        <img src="/images/mo.png" alt="Contact 2" />
       </div>
     </div>
   );
