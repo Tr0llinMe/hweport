@@ -9,6 +9,7 @@ src/components/contact/firebase.js
 .pnp.js
 __pycache__/
 __pycache__
+venv/
 
 # testing
 /coverage
