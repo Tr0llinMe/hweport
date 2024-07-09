@@ -8,23 +8,23 @@ const ContactInfo = () => {
       <h2>Contact Information</h2>
       <div className="info-item">
         <FaEnvelope />
-        <span className="tooltip">your.email@example.com</span>
+        <span className="tooltip">huydavidpham@hotmail.com</span>
       </div>
       <div className="info-item">
         <FaPhone />
-        <span className="tooltip">+123 456 7890</span>
+        <span className="tooltip">+416-276-3789</span>
       </div>
       <div className="info-item">
         <FaTwitter />
-        <span className="tooltip">@yourtwitterhandle</span>
+        <span className="tooltip">@hwehuy</span>
       </div>
       <div className="info-item">
         <FaInstagram />
-        <span className="tooltip">@yourinstagramhandle</span>
+        <span className="tooltip">@hwe.huy</span>
       </div>
       <div className="info-item">
         <FaLinkedin />
-        <span className="tooltip">yourlinkedinprofile</span>
+        <span className="tooltip">/in/huydpham/</span>
       </div>
     </div>
   );

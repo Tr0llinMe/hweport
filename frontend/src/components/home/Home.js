@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from '../home/ProjectCard';
+
 import './home.css';
 function Home() {
   return (
@@ -24,16 +25,16 @@ function Home() {
             repoLink="https://github.com/Tr0llinMe/Anomaly-Road-Detection" 
           />
           <ProjectCard 
-            title="Filler for Capstone" 
-            description="Short description." 
+            title="Capstone: Notify Me App" 
+            description="Navigation Application for Students Commuting." 
             details="Filler for Capstone" 
-            repoLink="https://github.com/yourusername/project2" 
+            repoLink="https://github.com/Tr0llinMe/Navigation-TMU" 
           />
           <ProjectCard 
-            title="Project Title 2" 
-            description="Short description." 
-            details="Detailed project description, technologies used, and your role." 
-            repoLink="https://github.com/yourusername/project2" 
+            title="Personal Website: hwe" 
+            description="Website made to showcase and share my passions." 
+            details="Created a website to showcase my skills and abilities in the workfield. Also to share my passions and ambissions in the foreseeable future." 
+            repoLink="https://github.com/Tr0llinMe/hweport" 
           />
         </section>
         <section id="contact" className="section">

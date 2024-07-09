@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TimelineItem.css';
+import './timelineitem.css';
 
 function TimelineItem({title, description, details, imgSRC, repoLink, date}) {
     

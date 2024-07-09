@@ -75,3 +75,6 @@ body {
     width: 100%;
   }
   
+  .social-media-section {
+    flex: 1;
+  }

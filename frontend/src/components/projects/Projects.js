@@ -1,5 +1,6 @@
 import React from 'react';
 import TimelineItem from './TimelineItem';
+import AnimatedBackground from '../contact/AnimatedBackground';
 import './projects.css';
 
 
@@ -36,6 +37,7 @@ const projects = [
 function Projects() {
   return (
     <div className= "projects">
+      <AnimatedBackground />
       <h2>My Projects</h2>
       <div className= "timeline">
         {projects.map((project, index) => (
