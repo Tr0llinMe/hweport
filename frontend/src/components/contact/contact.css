@@ -1,0 +1,24 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .contact-page .content {
+    max-width: 800px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .contact-image {
+    max-width: 400px; /* Set a max width for the image */
+    width: 100%;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
