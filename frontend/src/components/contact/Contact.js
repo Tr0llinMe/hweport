@@ -1,9 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
-import SocialMediaFeed from './SocialMediaFeed';
 import AnimatedBackground from './AnimatedBackground';
-import './ContactPage.css';
 
 const Contact = () => {
   return (
@@ -12,7 +10,6 @@ const Contact = () => {
       <div className="content">
         <ContactForm />
         <ContactInfo />
-        <SocialMediaFeed />
       </div>
     </div>
   );
