@@ -10,7 +10,7 @@ src/components/contact/firebase.js
 __pycache__/
 __pycache__
 venv/
-
+/venv
 # testing
 /coverage
 
