@@ -8,7 +8,7 @@ function About() {
         <div className="about-summary">
           <h1>About Me</h1>
           <p>
-            Hi there.My name is Huy Pham, a passionate recent graduate at the Toronto Metropolitan University studying software engineering. I am driven by my motivation to learn new things everyday, and have a desire to learn more about artificial intelligence and machien learning.
+            Hi there.My name is Huy Pham, a passionate recent graduate at the Toronto Metropolitan University studying software engineering. I am driven by my motivation to learn new things everyday, and have a desire to learn more about artificial intelligence and machine learning.
           </p>
         </div>
         <img src= "/images/aboutme.jpg" alt="About Me Huy" className= "about-photo" />
