@@ -1,17 +1,9 @@
-header.navbar {
+.navbar {
     background: #27293d;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     position: relative;
-  }
-
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e2e;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
   }
   
   .container {
@@ -73,42 +65,4 @@ header.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .toggle-button{
-    background: none;
-    border: none;
-    color: #27293d;
-  }
-
-  /*Mobile Portion*/
-  @media(max-width : 600px) {
-    .container {
-      align-items: flex-start;
-    }
-
-    .nav-links {
-      display:none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .nav-links a {
-      margin: 10px 0;
-    }
-
-    .navbar.open .nav-links {
-      display: flex;
-    }
-
-    .navbar .toggle-button {
-      display:block;
-      background: none;
-      border: none;
-      color: #ffffff;
-      font-size: 24px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
   }

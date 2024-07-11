@@ -1,18 +1,10 @@
 .contact-page {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     position: relative;
     padding: 20px;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-right: 90px;
   }
   
   .contact-page .content {
@@ -30,18 +22,4 @@
   .contact-image img {
     width: 100%;
     border-radius: 10px;
-    height: auto;
-  }
-
-  /* Mobile Portion*/
-  @media (min-width: 768px) {
-    .content {
-      flex-direction: column; 
-      align-items: center;
-    }
-  
-    .contact-image img {
-      width: 80%;
-      margin: 10px 0;
-    }
   }
