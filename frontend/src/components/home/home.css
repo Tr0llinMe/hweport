@@ -74,14 +74,3 @@ body {
     padding: 10px 0;
     width: 100%;
   }
-
-  @media (min-width: 600px) {
-    .about-content {
-      flex-direction: row;
-    }
-
-    .about-image {
-      max-width: 150px;
-      margin-right: 20px;
-    }
-  }
