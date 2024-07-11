@@ -1,17 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaInstagram, FaLinkedin, FaBars } from 'react-icons/fa';
+import { FaHome, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import SpotifyPlaylist from './SpotifyPlaylist';
 import './navbar.css';
 
 function Navbar() {
-  
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleNav =() => {
-    setIsOpen(!isOpen);
-  }
   return (
-    <header className={`navbar ${isOpen ? 'open' : ''}`}>
+    <header className="navbar">
       <div className="container">
         <div className="icon-group">
           <Link to="/" className="icon"><FaHome /></Link>
@@ -22,9 +17,6 @@ function Navbar() {
           <h1>Huy (David) Pham</h1>
           <h2>Software Engineering Graduate</h2>
         </div>
-        <button className="toggle-button" onClick={toggleNav}>
-          <FaBars />
-        </button>
         <nav className="nav-links">
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>

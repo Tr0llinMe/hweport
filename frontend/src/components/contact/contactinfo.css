@@ -4,7 +4,6 @@
     border-radius: 10px;
     margin-bottom: 20px;
     color: #2c2f48;
-    width: 110%;
     max-width: 350px;
   }
   
@@ -35,11 +34,4 @@
 
   .contact-info .info-item svg {
     color: blue; /* Set icon color to blue */
-  }
-
-  /*Mobile Portion */
-  @media (max-width: 768px) {
-    .contact-info {
-      width:100%
-    }
   }
