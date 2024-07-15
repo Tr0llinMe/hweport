@@ -36,12 +36,18 @@
     transform: rotate(360deg);
   }
 }
+#root {
+  background-color: #1e1e2e;
+  min-width: 100vh;
+}
 
 body, html, .app-container {
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #1e1e2e;
+  font: 'Arial', sans-serif;
 }
 
 .app-container {
@@ -52,6 +58,22 @@ body, html, .app-container {
 
 .content {
   flex: 1; /* This makes sure the content area grows to fill the available space */
+  position: relative;
+  z-index: 1;
+}
+
+.contact-page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .footer {

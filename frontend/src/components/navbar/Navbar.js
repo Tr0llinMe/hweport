@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import SpotifyPlaylist from './SpotifyPlaylist';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './navbar.css';
 
 function Navbar() {
   return (
-    <header className="navbar">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div className="container-fluid container-custom">
         <div className="icon-group">
           <Link to="/" className="icon"><FaHome /></Link>
           <a href="https://www.instagram.com/hwe.huy/" target="_blank" rel="noopener noreferrer" className="icon"><FaInstagram /></a>
@@ -17,17 +18,30 @@ function Navbar() {
           <h1>Huy (David) Pham</h1>
           <h2>Software Engineering Graduate</h2>
         </div>
-        <nav className="nav-links">
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/tothetop">To The Top!</Link>
-        </nav>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/projects" className="nav-link">Projects</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link">Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/tothetop" className="nav-link">To the Top!</Link>
+            </li>
+          </ul>
+        </div>
         <div className='spotify-playlist'>
           <SpotifyPlaylist />
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
 

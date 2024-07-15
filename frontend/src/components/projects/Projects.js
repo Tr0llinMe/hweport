@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Anomaly Detection: Training Model',
     description: 'Worked as a predecessaor for NotifyMe. Created a training model to detect road anomalies.',
-    details: 'Worked as the main developer for this project. The training mdoel is used to detect whether or not the road conditions are suitable for vehicles to drive in. It uses a CNN model for the learning process, with making use of computer vision in order to detect any issues with the pictures. The training set is then organized so that it can be later used to retrain the model.',
+    details: 'Worked as the main developer for this project. The training model is used to detect whether or not the road conditions are suitable for vehicles to drive in. It uses a CNN model for the learning process, with making use of computer vision in order to detect any issues with the pictures. The training set is then organized so that it can be later used to retrain the model.',
     imgSRC: '/images/anomalydetection.png',
     repoLink: 'https://github.com/Tr0llinMe/Anomaly-Road-Detection',
     date: 'November 2023'

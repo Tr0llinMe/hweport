@@ -9,6 +9,7 @@
   
   .contact-info h2 {
     margin-bottom: 20px;
+    color: #2c2f48;
   }
   
   .contact-info .info-item {
@@ -18,16 +19,17 @@
     color: #2c2f48;
   }
   
-  .contact-info .info-item .tooltip {
-    display: block;
+  .contact-info .info-item .custom-tooltip {
+    display: inline-block;
     margin-left: 20px;
     background: #2c2f48;
     color: white;
-    padding: 4px;
+    padding: 4px 8px;
     border-radius: 5px;
     position: absolute;
   }
 
   .contact-info .info-item svg {
     color: #2c2f48; /* Set icon color to blue */
+    margin-right: 10px;
   }
