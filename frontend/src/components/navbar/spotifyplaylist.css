@@ -16,3 +16,11 @@
   .spotify-playlist iframe {
     border-radius: 12px; 
   }
+
+
+  @media (max-width: 767px) {
+  .spotify-playlist {
+    width: 200px; /* Adjust width for mobile */
+    height: 60px;  /* Adjust height for mobile */
+  }
+}
