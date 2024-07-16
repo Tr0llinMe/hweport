@@ -62,13 +62,13 @@ h2 {
 }
 
 .spotify-playlist {
-  display: flex;
   position: absolute;
   top: 10px;
   right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1050;
 }
 
 @media (max-width: 767px) {
@@ -86,6 +86,10 @@ h2 {
   .spotify-playlist-wrapper.open {
     transform: translateY(0); /* Slide down when open */
   }
+
+  .collapse.navbar-collapse.show + .spotify-playlist-wrapper {
+    display: block; /* Show the SpotifyPlaylist wrapper when the menu is open on mobile */
+  }
 }
 
 .navbar {
@@ -97,6 +101,3 @@ h2 {
   z-index: 1051; /* Ensure it's above the SpotifyPlaylist */
 }
 
-.collapse.navbar-collapse.show + .spotify-playlist-wrapper {
-  display: block; /* Show the SpotifyPlaylist wrapper when the menu is open on mobile */
-}
