@@ -20,7 +20,7 @@
 
   @media (max-width: 767px) {
     .spotify-playlist {
-      width: 100%; /* Full width for mobile */
+      width: 200px; /* Full width for mobile */
       height: auto; /* Adjust height for mobile */
     }
   
