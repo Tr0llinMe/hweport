@@ -3,7 +3,7 @@
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
-    max-width: 400px;
+    max-width: 500px;
     color: #2c2f48;
   }
   
@@ -19,8 +19,12 @@
 
 
   @media (max-width: 767px) {
-  .spotify-playlist {
-    width: 200px; /* Adjust width for mobile */
-    height: 60px;  /* Adjust height for mobile */
+    .spotify-playlist {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Adjust height for mobile */
+    }
+  
+    .spotify-playlist iframe {
+      height: 200px; /* Adjust height as needed for mobile */
+    }
   }
-}
