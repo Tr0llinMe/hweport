@@ -20,11 +20,12 @@
 
   @media (max-width: 767px) {
     .spotify-playlist {
-      width: 200px; /* Full width for mobile */
+      width: 100px; /* Full width for mobile */
       height: auto; /* Adjust height for mobile */
     }
   
     .spotify-playlist iframe {
-      height: 200px; /* Adjust height as needed for mobile */
+      height: 150px; /* Adjust height as needed for mobile */
+      width: 100%;
     }
   }

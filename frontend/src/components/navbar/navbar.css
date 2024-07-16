@@ -72,17 +72,9 @@ h2 {
   z-index: 1050;
 }
 
-@media (min-width: 768px) {
-  .spotify-playlist-wrapper {
-    top: 10px;
-    right: 20px;
-    transform: none;
-  }
-}
-
 @media (max-width: 767px) {
   .spotify-playlist-wrapper {
-    width: auto; 
+    width: 100px; 
     height: auto;
     top: 10px; 
     right: 10px; 
