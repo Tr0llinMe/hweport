@@ -7,7 +7,7 @@ const SpotifyPlaylist = () => {
       <iframe
           title="Spotify Playlist"
           src="https://open.spotify.com/embed/playlist/59z0fRhIKiNFJgiUnMMjdS?utm_source=generator"
-          width="800"
+          width="400"
           height="152"
           frameBorder="0"
           allowFullScreen=""
