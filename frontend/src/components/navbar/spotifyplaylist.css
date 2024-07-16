@@ -25,7 +25,7 @@
     }
   
     .spotify-playlist iframe {
-      height: 50px; /* Adjust height as needed for mobile */
+      height: 70px; /* Adjust height as needed for mobile */
       width: 100%;
     }
   }
