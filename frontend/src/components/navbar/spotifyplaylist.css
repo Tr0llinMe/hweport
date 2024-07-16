@@ -26,6 +26,6 @@
   
     .spotify-playlist iframe {
       height: 100%; /* Adjust height as needed for mobile */
-      width: 100%;
+      width: 100px;
     }
   }
