@@ -71,7 +71,7 @@ h2 {
 }
 
 .spotify-playlist-wrapper {
-  display: none; /* Hide by default */
+  display: show; 
 }
 
 @media (max-width: 767px) {
@@ -91,7 +91,6 @@ h2 {
   }
 }
 
-/* Additional navbar styles to ensure proper positioning */
 .navbar {
   position: relative;
   z-index: 1000;
