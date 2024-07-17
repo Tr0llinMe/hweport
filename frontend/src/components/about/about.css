@@ -105,3 +105,9 @@
   p, li {
     color:#ffffff;
   }
+
+  @media (max-width: 767px) {
+    .personal-interests .photos-grid .section-photo {
+      width: 100px; /* Adjust as we go. If it gets worst adjust everything */
+    }
+  }
