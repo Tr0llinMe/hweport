@@ -33,3 +33,11 @@
     color: #2c2f48; /* Set icon color to blue */
     margin-right: 10px;
   }
+
+  @media (max-width: 767px) {
+    .contact-info {
+      width: 100%; /* Adjust as we go */
+      padding: 15px;
+      max-width: 100%;
+    }
+  }
