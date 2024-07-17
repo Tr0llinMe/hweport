@@ -5,12 +5,14 @@
     min-height: 100vh;
     position: relative;
     padding: 20px;
+    flex-direction: row;
   }
   
   .contact-page .content {
     max-width: 800px;
     width: 100%;
     z-index: 1;
+    flex-direction: row;
   }
 
   .contact-image {
@@ -33,5 +35,10 @@
     .contact-page .contact-image {
       width: 100%;
       margin-top: 10px;
+      order: 2;
+    }
+
+    .content-page .content {
+      order: 1;
     }
   }
