@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# hwehuy.ca
+
+The following project was made to create the website : hwehuy.ca
+- This project was done to showcase and portfolio my capabilities
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
