@@ -108,6 +108,6 @@
 
   @media (max-width: 767px) {
     .personal-interests .photos-grid .section-photo {
-      width: 50px; /* Adjust as we go. If it gets worst adjust everything */
+      width: 20px; /* Adjust as we go. If it gets worst adjust everything */
     }
   }
