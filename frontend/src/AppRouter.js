@@ -4,7 +4,6 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Navbar from './components/navbar/Navbar';
 import Tothetop from './components/tothetop/Tothetop';
 import './App.css';
 
@@ -12,7 +11,6 @@ function AppRouter() {
   return (
     <Router>
       <div className="app-container">
-        <Navbar />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
