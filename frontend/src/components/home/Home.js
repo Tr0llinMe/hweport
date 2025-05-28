@@ -1,4 +1,5 @@
 import "./home.css"
+import projectInfo from '../projects/projectInfo'
 
 function Home() {
   return (
@@ -77,44 +78,13 @@ function Home() {
               </p>
             </div>
             <div className="portfolio-grid">
-              {[
-                {
-                  title: "Spotify Design System",
-                  description: "A comprehensive design system for Spotify's internal tools",
-                  image: "https://via.placeholder.com/600x400",
-                },
-                {
-                  title: "Architectural Portfolio App",
-                  description: "Mobile application for architects to showcase their work",
-                  image: "https://via.placeholder.com/600x400",
-                },
-                {
-                  title: "E-commerce Redesign",
-                  description: "Complete UX/UI overhaul for a leading e-commerce platform",
-                  image: "https://via.placeholder.com/600x400",
-                },
-                {
-                  title: "Smart Home Dashboard",
-                  description: "Intuitive interface for controlling smart home devices",
-                  image: "https://via.placeholder.com/600x400",
-                },
-                {
-                  title: "Travel Planning Platform",
-                  description: "End-to-end travel planning experience with personalized recommendations",
-                  image: "https://via.placeholder.com/600x400",
-                },
-                {
-                  title: "Health & Wellness App",
-                  description: "Mobile application focused on mental and physical wellbeing",
-                  image: "https://via.placeholder.com/600x400",
-                },
-              ].map((project, index) => (
-                <div key={index} className="portfolio-card">
+              {Object.values(projectInfo).map((project) => (
+                <div key={project.id} className="portfolio-card">
                   <img src={project.image || "/placeholder.svg"} alt={project.title} className="portfolio-image" />
                   <div className="portfolio-content">
                     <h3 className="portfolio-title">{project.title}</h3>
-                    <p className="portfolio-description">{project.description}</p>
-                    <a href="#" className="portfolio-link">
+                    <p className="portfolio-description">{project.subtitle}</p>
+                    <a href={`/projects/${project.id}`} className="portfolio-link">
                       View Project
                       <span className="icon">→</span>
                     </a>
@@ -306,7 +276,7 @@ function Home() {
 
       <footer className="footer">
         <div className="container footer-container">
-          <p className="copyright">© {new Date().getFullYear()} Paul Smith. All rights reserved.</p>
+          <p className="copyright">© {new Date().getFullYear()} Huy Pham. All rights reserved.</p>
           <div className="social-links">
             <a href="#" className="social-link">
               LinkedIn

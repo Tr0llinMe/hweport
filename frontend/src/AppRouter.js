@@ -15,14 +15,11 @@ function AppRouter() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tothetop" element={<Tothetop />} />
+            <Route path="/projects/:projectId" element={<Projects />} />
           </Routes>
         </div>
-        <footer className="footer">
-          <p>&copy; 2024 David Pham</p>
-        </footer>
       </div>
     </Router>
   );

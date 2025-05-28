@@ -1,51 +1,136 @@
-import React from 'react';
-import TimelineItem from './TimelineItem';
-import AnimatedBackground from '../contact/AnimatedBackground';
-import './projects.css';
-
-
-//List for projects: title,desc,details,image,repolink,date
-const projects = [
-  {
-    title: 'Personal Website: hwe',
-    description: 'My own personal website to showcase my skills and passions. Showcase my abiltities for software engineering and development.',
-    details: 'Personally developped a user-friendly, responsive website to showcase my skills, projects, and my personal and professional exerpeince. This design features a sleek design with cohesive navation and interactive elements that provide a large overview of my work.',
-    imgSRC: '/images/personalweb.png',
-    repoLink: 'https://github.com/Tr0llinMe/hweport',
-    date: 'May 2024'
-  },
-  {
-    title: 'Capstone: NotifyMe Application',
-    description: 'A navigation application catered to students to streamline their commuting experience.',
-    details: 'Worked as a full-stack developer within the project in order to learn the general workflow and architecture for this application. The website is able to give navigations for any mode of transport users need, with traffic congestion % also included for users to decide their directions. It also includes an hour-to-hour traffic detail to show when the best time users should leave.',
-    imgSRC: '/images/NotifyMeSystem.png',
-    repoLink: 'https://github.com/Tr0llinMe/Navigation-TMU',
-    date: 'January 2024'
-  },
-  {
-    title: 'Anomaly Detection: Training Model',
-    description: 'Worked as a predecessaor for NotifyMe. Created a training model to detect road anomalies.',
-    details: 'Worked as the main developer for this project. The training model is used to detect whether or not the road conditions are suitable for vehicles to drive in. It uses a CNN model for the learning process, with making use of computer vision in order to detect any issues with the pictures. The training set is then organized so that it can be later used to retrain the model.',
-    imgSRC: '/images/anomalydetection.png',
-    repoLink: 'https://github.com/Tr0llinMe/Anomaly-Road-Detection',
-    date: 'November 2023'
-  },
-  //If more is needed add in chrono
-];
-
+import { useParams, Link } from 'react-router-dom'
+import projectInfo from './projectInfo'
+import "./Projects.css"
 
 function Projects() {
-  return (
-    <div className= "projects">
-      <AnimatedBackground />
-      <h2>My Projects</h2>
-      <div className= "timeline">
-        {projects.map((project, index) => (
-          <TimelineItem key={index} {...project} />
-        ))}
+  const { projectId } = useParams()
+  const project = projectInfo[projectId]
+
+  if (!project) {
+    return (
+      <div className="project-detail">
+        <div className="container">
+          <h1>Project not found</h1>
+          <Link to="/" className="back-link">
+            <span className="icon">←</span>
+            Back to Portfolio
+          </Link>
+        </div>
       </div>
+    )
+  }
+
+  return (
+    <div className="project-detail">
+      <header className="project-header">
+        <div className="container">
+          <Link to="/" className="back-link">
+            <span className="icon">←</span>
+            Back to Portfolio
+          </Link>
+        </div>
+      </header>
+
+      <main className="project-main">
+        <div className="container">
+          <div className="project-hero">
+            <h1 className="project-title">{project.title}</h1>
+            <p className="project-subtitle">{project.subtitle}</p>
+            <div className="project-meta">
+              <div className="meta-item">
+                <span className="meta-label">Client</span>
+                <span className="meta-value">{project.client}</span>
+              </div>
+              <div className="meta-item">
+                <span className="meta-label">Year</span>
+                <span className="meta-value">{project.year}</span>
+              </div>
+              <div className="meta-item">
+                <span className="meta-label">Role</span>
+                <span className="meta-value">{project.role}</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-content">
+            <section className="project-section">
+              <h2 className="section-title">Project Overview</h2>
+              <p className="section-text">{project.overview}</p>
+            </section>
+
+            <section className="project-section">
+              <h2 className="section-title">Challenge</h2>
+              <p className="section-text">{project.challenge}</p>
+              <ul className="project-list">
+                {project.challengePoints.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="project-section">
+              <h2 className="section-title">Solution</h2>
+              <p className="section-text">
+                I developed a comprehensive solution that included:
+              </p>
+              <div className="solution-grid">
+                {project.solutions.map((solution, index) => (
+                  <div key={index} className="solution-card">
+                    <h3 className="solution-title">{solution.title}</h3>
+                    <p className="solution-text">{solution.description}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="project-section">
+              <h2 className="section-title">Results</h2>
+              <div className="results-grid">
+                {project.results.map((result, index) => (
+                  <div key={index} className="result-card">
+                    <h3 className="result-value">{result.value}</h3>
+                    <p className="result-label">{result.label}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {project.images && project.images.length > 0 && (
+              <section className="project-section">
+                <h2 className="section-title">Project Gallery</h2>
+                <div className="gallery-grid">
+                  {project.images.map((image, index) => (
+                    <div key={index} className="gallery-item">
+                      <img 
+                        src={image.src} 
+                        alt={image.caption} 
+                        className="gallery-image"
+                      />
+                      <div className="gallery-caption">
+                        {image.caption}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+        </div>
+      </main>
+
+      <footer className="project-footer">
+        <div className="container">
+          <div className="footer-content">
+            <p className="footer-text">Interested in working together?</p>
+            <a href="mailto:paul@example.com" className="contact-button">
+              Get in Touch
+              <span className="icon">→</span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-  );
+  )
 }
 
-export default Projects;
+export default Projects 
