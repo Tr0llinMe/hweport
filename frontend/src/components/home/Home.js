@@ -80,7 +80,11 @@ function Home() {
             <div className="portfolio-grid">
               {Object.values(projectInfo).map((project) => (
                 <div key={project.id} className="portfolio-card">
-                  <img src={project.image || "/placeholder.svg"} alt={project.title} className="portfolio-image" />
+                  <img 
+                    src={project.thumbnail || "/placeholder.svg"} 
+                    alt={project.title} 
+                    className="portfolio-image" 
+                  />
                   <div className="portfolio-content">
                     <h3 className="portfolio-title">{project.title}</h3>
                     <p className="portfolio-description">{project.subtitle}</p>
@@ -268,7 +272,7 @@ function Home() {
               </div>
             </div>
             <div className="contact-image">
-              <img src="/images/mo.png" alt="Paul Smith" className="contact-img" />
+              <img src="/images/graduation.jpg" alt="Paul Smith" className="contact-img" />
             </div>
           </div>
         </section>

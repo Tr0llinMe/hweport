@@ -29,7 +29,7 @@ const projects = [
     imgSRC: '/images/anomalydetection.png',
     repoLink: 'https://github.com/Tr0llinMe/Anomaly-Road-Detection',
     date: 'November 2023'
-  },
+  }
 ];
 
 

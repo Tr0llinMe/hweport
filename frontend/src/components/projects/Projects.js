@@ -1,10 +1,12 @@
 import { useParams, Link } from 'react-router-dom'
+import { useState } from 'react'
 import projectInfo from './projectInfo'
 import "./Projects.css"
 
 function Projects() {
   const { projectId } = useParams()
   const project = projectInfo[projectId]
+  const [selectedImage, setSelectedImage] = useState(null)
 
   if (!project) {
     return (
@@ -18,6 +20,14 @@ function Projects() {
         </div>
       </div>
     )
+  }
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image)
+  }
+
+  const handleCloseModal = () => {
+    setSelectedImage(null)
   }
 
   return (
@@ -70,9 +80,6 @@ function Projects() {
 
             <section className="project-section">
               <h2 className="section-title">Solution</h2>
-              <p className="section-text">
-                I developed a comprehensive solution that included:
-              </p>
               <div className="solution-grid">
                 {project.solutions.map((solution, index) => (
                   <div key={index} className="solution-card">
@@ -100,7 +107,7 @@ function Projects() {
                 <h2 className="section-title">Project Gallery</h2>
                 <div className="gallery-grid">
                   {project.images.map((image, index) => (
-                    <div key={index} className="gallery-item">
+                    <div key={index} className="gallery-item" onClick={() => handleImageClick(image)}>
                       <img 
                         src={image.src} 
                         alt={image.caption} 
@@ -118,11 +125,21 @@ function Projects() {
         </div>
       </main>
 
+      {selectedImage && (
+        <div className="image-modal" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={handleCloseModal}>×</button>
+            <img src={selectedImage.src} alt={selectedImage.caption} className="modal-image" />
+            <div className="modal-caption">{selectedImage.caption}</div>
+          </div>
+        </div>
+      )}
+
       <footer className="project-footer">
         <div className="container">
           <div className="footer-content">
             <p className="footer-text">Interested in working together?</p>
-            <a href="mailto:paul@example.com" className="contact-button">
+            <a href="mailto:phamhwe@gmail.com" className="contact-button">
               Get in Touch
               <span className="icon">→</span>
             </a>
