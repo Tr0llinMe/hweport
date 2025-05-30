@@ -49,6 +49,10 @@ function Home() {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <button className="menu-button" onClick={toggleMobileMenu}>
+          <span className="icon">✕</span>
+          <span className="sr-only">Close menu</span>
+        </button>
         <nav className="mobile-nav">
           <a href="#portfolio" className="mobile-nav-link" onClick={toggleMobileMenu}>
             Portfolio
