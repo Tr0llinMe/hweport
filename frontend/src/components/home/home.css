@@ -61,7 +61,7 @@ a {
 
 .logo {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #f39c12;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -779,7 +779,7 @@ a {
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .hero-subtitle {
