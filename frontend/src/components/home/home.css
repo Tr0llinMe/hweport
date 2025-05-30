@@ -61,7 +61,7 @@ a {
 
 .logo {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #f39c12;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -103,6 +103,15 @@ a {
 
 .menu-button {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 100;
 }
 
 .icon {
@@ -755,6 +764,10 @@ a {
 
 /* Desktop styles */
 @media (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .nav {
     display: flex;
     gap: 1.5rem;
