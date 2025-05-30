@@ -149,7 +149,7 @@ const projectInfo = {
     client: 'Self',
     year: '2024',
     role: 'Sole Developer',
-    thumbnail: '/images/projects/site/PersonalWeb.png',
+    thumbnail: '/images/projects/site/personalweb.png',
     overview: 'This website was originally created to showcase the work I had done throughout the years. It was a simple website that was created during my years in university, which just a space to also maintain the domain name.',
     challenge: 'The main challenge of the project was to learn how to use the technologies that were used in the website.',
     challengePoints: [
@@ -178,19 +178,19 @@ const projectInfo = {
     ],
     images: [
       {
-        src: '/images/projects/oldSite/oldSite.png',
+        src: '/images/projects/site/personalweb.png',
         caption: 'Home Page of the Website'
       },
       {
-        src: '/images/projects/oldSite/aboutme.png',
+        src: '/images/projects/site/aboutme.png',
         caption: 'About Me Page of the Website'
       },
       {
-        src: '/images/projects/oldSite/projectpage.png',
+        src: '/images/projects/site/projectpage.png',
         caption: 'Projects Page of the Website'
       },
       {
-        src: '/images/projects/oldSite/contactpage.png',
+        src: '/images/projects/site/contactpage.png',
         caption: 'Contact Page of the Website'
       }
     ]
@@ -202,7 +202,7 @@ const projectInfo = {
     client: 'Project',
     year: '2023',
     role: 'Backend Developer',
-    thumbnail: '/images/projects/anomaly/anomalyDetection.png',
+    thumbnail: '/images/projects/anomaly/anomalydetection.png',
     overview: 'Worked as the main developer for this project. The training model is used to detect whether or not the road conditions are suitable for vehicles to drive in. It uses a CNN model for the learning process, with making use of computer vision in order to detect any issues with the pictures. The training set is then organized so that it can be later used to retrain the model.',
     challenge: 'The main challenge of this project would involve how the model would be able to detect anomalies in the data, and how the model would be able to handle the data that was provided.',
     challengePoints: [
@@ -229,7 +229,7 @@ const projectInfo = {
     ],
     images: [
       {
-        src: '/images/projects/anomaly/anomalyDetection.png',
+        src: '/images/projects/anomaly/anomalydetection.png',
         caption: 'The Detection Model that was used to detect anomalies in the data.',
       }
     ]
