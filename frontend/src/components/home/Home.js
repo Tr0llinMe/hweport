@@ -1,7 +1,14 @@
 import "./home.css"
 import projectInfo from '../projects/projectInfo'
+import { useState } from 'react'
 
 function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
   return (
     <div className="portfolio">
       <header className="header">
@@ -33,12 +40,39 @@ function Home() {
             <span className="icon">✉️</span>
             Email Me
           </a>
-          <button className="menu-button">
-            <span className="icon">▼</span>
+          <button className="menu-button" onClick={toggleMobileMenu}>
+            <span className="icon">☰</span>
             <span className="sr-only">Toggle menu</span>
           </button>
         </div>
       </header>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <nav className="mobile-nav">
+          <a href="#portfolio" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            Portfolio
+          </a>
+          <a href="#about" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            About
+          </a>
+          <a href="#career" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            Career
+          </a>
+          <a href="#why-me" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            Why Me
+          </a>
+          <a href="#faq" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            FAQ
+          </a>
+          <a href="#contact" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            Contact
+          </a>
+          <a href="mailto:phamhwe@gmail.com" className="mobile-nav-link" onClick={toggleMobileMenu}>
+            Email Me
+          </a>
+        </nav>
+      </div>
 
       <main className="main">
         {/* Hero Section */}
@@ -108,10 +142,10 @@ function Home() {
             <div className="about-content">
               <h2 className="about-title">About Me</h2>
               <p className="about-text">
-              I’m a software developer who loves working across the stack and turning messy problems into clean, 
-              useful tools. I’ve built everything from web apps and mobile features to data dashboards and 
+              I'm a software developer who loves working across the stack and turning messy problems into clean, 
+              useful tools. I've built everything from web apps and mobile features to data dashboards and 
               machine learning pipelines — using tools like React, Flask, Python, MongoDB, and AWS. 
-              Whether I’m working on backend logic or designing something users can interact with, I’m all about 
+              Whether I'm working on backend logic or designing something users can interact with, I'm all about 
               learning fast, building better, and making things that actually help people.
               </p>
               <p className="about-text">
@@ -200,7 +234,7 @@ function Home() {
                 {
                   title: "Learn Fast, Adapt Fast",
                   description:
-                    "I’m comfortable stepping into unfamiliar tools or domains — whether it's OCR, ML workflows, or new frameworks — and figuring things out quickly.",
+                    "I'm comfortable stepping into unfamiliar tools or domains — whether it's OCR, ML workflows, or new frameworks — and figuring things out quickly.",
                 },
                 {
                   title: "Build with Purpose",
