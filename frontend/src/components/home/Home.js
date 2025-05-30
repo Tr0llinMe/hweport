@@ -9,6 +9,10 @@ function Home() {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+  }
+
   return (
     <div className="portfolio">
       <header className="header">
@@ -40,39 +44,37 @@ function Home() {
             <span className="icon">✉️</span>
             Email Me
           </a>
-          <button className="menu-button" onClick={toggleMobileMenu}>
+          <button className="menu-button" onClick={toggleMobileMenu} aria-label="Toggle menu">
             <span className="icon">☰</span>
-            <span className="sr-only">Toggle menu</span>
           </button>
         </div>
       </header>
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <button className="menu-button" onClick={toggleMobileMenu}>
+        <button className="menu-button" onClick={closeMobileMenu} aria-label="Close menu">
           <span className="icon">✕</span>
-          <span className="sr-only">Close menu</span>
         </button>
         <nav className="mobile-nav">
-          <a href="#portfolio" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#portfolio" className="mobile-nav-link" onClick={closeMobileMenu}>
             Portfolio
           </a>
-          <a href="#about" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#about" className="mobile-nav-link" onClick={closeMobileMenu}>
             About
           </a>
-          <a href="#career" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#career" className="mobile-nav-link" onClick={closeMobileMenu}>
             Career
           </a>
-          <a href="#why-me" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#why-me" className="mobile-nav-link" onClick={closeMobileMenu}>
             Why Me
           </a>
-          <a href="#faq" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#faq" className="mobile-nav-link" onClick={closeMobileMenu}>
             FAQ
           </a>
-          <a href="#contact" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="#contact" className="mobile-nav-link" onClick={closeMobileMenu}>
             Contact
           </a>
-          <a href="mailto:phamhwe@gmail.com" className="mobile-nav-link" onClick={toggleMobileMenu}>
+          <a href="mailto:phamhwe@gmail.com" className="mobile-nav-link" onClick={closeMobileMenu}>
             Email Me
           </a>
         </nav>
