@@ -953,7 +953,7 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     text-align: left;
-    ign-items: center;
+    align-items: center;
   }
   .hero-buttons {
     flex-direction: row;
