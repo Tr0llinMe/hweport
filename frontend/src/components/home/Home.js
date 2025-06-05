@@ -9,10 +9,6 @@ function Home() {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false)
-  }
-
   return (
     <div className="portfolio">
       <header className="header">
@@ -20,7 +16,7 @@ function Home() {
           <a href="/" className="logo">
             Huy (David) Pham
           </a>
-          <nav className="nav">
+          <nav className={`nav ${isMobileMenuOpen ? 'show' : ''}`}>
             <a href="#portfolio" className="nav-link">
               Portfolio
             </a>
@@ -49,36 +45,6 @@ function Home() {
           </button>
         </div>
       </header>
-
-      {/* Mobile Menu */}
-      <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <button className="menu-button" onClick={closeMobileMenu} aria-label="Close menu">
-          <span className="icon">✕</span>
-        </button>
-        <nav className="mobile-nav">
-          <a href="#portfolio" className="mobile-nav-link" onClick={closeMobileMenu}>
-            Portfolio
-          </a>
-          <a href="#about" className="mobile-nav-link" onClick={closeMobileMenu}>
-            About
-          </a>
-          <a href="#career" className="mobile-nav-link" onClick={closeMobileMenu}>
-            Career
-          </a>
-          <a href="#why-me" className="mobile-nav-link" onClick={closeMobileMenu}>
-            Why Me
-          </a>
-          <a href="#faq" className="mobile-nav-link" onClick={closeMobileMenu}>
-            FAQ
-          </a>
-          <a href="#contact" className="mobile-nav-link" onClick={closeMobileMenu}>
-            Contact
-          </a>
-          <a href="mailto:phamhwe@gmail.com" className="mobile-nav-link" onClick={closeMobileMenu}>
-            Email Me
-          </a>
-        </nav>
-      </div>
 
       <main className="main">
         {/* Hero Section */}
@@ -196,7 +162,7 @@ function Home() {
                   year: "May 2021 - August 2021",
                   title: "Junior Software Developer at Intiveo",
                   description:
-                    "Worked within the healthcare industry, building a web application for clients to help them manage their patient data, schedule appointments, and overall improve the overal healthcare experience.",
+                    "Worked within the healthcare industry, building a web application for clients to help them manage their patient data, schedule appointments, and overall improve the healthcare experience.",
                 },
                 {
                   year: "June 2021 - May 2022",
@@ -269,7 +235,7 @@ function Home() {
                 {
                   question: "Why do you want to work in this industry?",
                   answer:
-                    "From a younge age, I've been surrounded by many people who were apart of the tech industry, and I've always been fascinated by the process of using technology to build real-world solutions. This has always been a passion of mine, and I'm always looking to learn more about the industry.",
+                    "From a young age, I've been surrounded by many people who were apart of the tech industry, and I've always been fascinated by the process of using technology to build real-world solutions. This has always been a passion of mine, and I'm always looking to learn more about the industry.",
                 },
                 {
                   question: "What's a recent challenge that you solved and you're proud of?",
@@ -279,7 +245,7 @@ function Home() {
                 {
                   question: "How do you apporach learning new tools or technologies?",
                   answer:
-                    "I've found that the best way to learn new tools or technologies is to just jump in and start building with them. I've found that this is the best way to understand the tool, and how to use it to its fullest extent. Generally, not only do I read documentation to udnerstand the use case of the tool, but I also look into real life applications of the tool being in use, in order to understand the best use cases of the tool.",
+                    "I've found that the best way to learn new tools or technologies is to just jump in and start building with them. I've found that this is the best way to understand the tool, and how to use it to its fullest extent. Generally, not only do I read documentation to understand the use case of the tool, but I also look into real life applications of the tool being in use, in order to understand the best use cases of the tool.",
                 },
                 {
                   question: "What kind of projects do you like to work on?",
