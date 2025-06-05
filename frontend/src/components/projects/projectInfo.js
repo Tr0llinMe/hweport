@@ -7,7 +7,7 @@ const projectInfo = {
     year: '2025',
     role: 'Sole Designer',
     thumbnail: '/images/projects/revamp/contactform.png',
-    overview: "For the goal of this website revamp, I wanted to create a more sleek and moden look for my portfolio, while maintain the some of the key design elements that made the last website successful. This involved researchingt and testing various other design styles, and finally executing the final design.",
+    overview: "For the goal of this website revamp, I wanted to create a more sleek and moden look for my portfolio, while maintaining some of the key design elements that made the last website successful. This involved researchingt and testing various other design styles, and finally executing the final design.",
     challenge: "Since there has been other projects that I worked on after the first site creation, revisiting the old website was a bit of a challenge picking up what was left off, trying to complete portions of the websites left undone. Generally, the challenges can be break down to the following challenges were established:",
     challengePoints: [
       'Refactor the old website to be more modular and easier to maintain',
@@ -17,8 +17,8 @@ const projectInfo = {
     ],
     solutions: [
       {
-        title: 'Readdress Architecture',
-        description: 'Condensed the webstite into easier to maintain components, and allowed for easier spaces/areas that can be added to in the future.'
+        title: 'Re-Address Architecture',
+        description: 'Condensed the website into easier to maintain components, and allowed for easier spaces/areas that can be added to in the future.'
       },
       {
         title: 'Identity Creation',
@@ -26,7 +26,7 @@ const projectInfo = {
       },
       {
         title: 'Comparison Models',
-        description: 'Looked at various other portfolio websites, and took inspiration from them to create a unique and personal website Unique colour/design choices were what the goals of this website was.'
+        description: 'Looked at various other portfolio websites, and took inspiration from them to create a unique and personal colour palette for thewebsite Unique colour/design choices were what the goals of this website was.'
       },
       {
         title: 'Intentional Design Choices',
@@ -150,11 +150,11 @@ const projectInfo = {
     year: '2024',
     role: 'Sole Developer',
     thumbnail: '/images/projects/site/personalweb.png',
-    overview: 'This website was originally created to showcase the work I had done throughout the years. It was a simple website that was created during my years in university, which just a space to also maintain the domain name.',
+    overview: 'This website was originally created to showcase the work I had done throughout the years. It was a simple website that was created during my years in university, which was also a space to maintain the domain name.',
     challenge: 'The main challenge of the project was to learn how to use the technologies that were used in the website.',
     challengePoints: [
       'Learn how to use the technologies that were used in the website.',
-      'Learning React, and the overallm tech stack that was used for the website.',
+      'Learning React, and the overall tech stack that was used for the website.',
       'Using a VPS for the first time to host the website, to confirm the domain name.',
       'Practicing good coding practices, and learning how to write clean code.',
     ],
